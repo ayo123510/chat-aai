@@ -14,8 +14,19 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "ChatAAI",
   description:
-    "ChatAAI is a real-time AI research assistant powered by Groq, Tavily, and Supabase.",
+    "Real-time AI research assistant powered by Groq, Tavily, and Supabase.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
 
 export default function RootLayout({ children }) {
   return (
